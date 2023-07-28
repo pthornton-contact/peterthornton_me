@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | peterthornton.me</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+</head>
+
+<body>
+
+    {% include 'top-nav.html' %}
+
+
+    <div x-data="{ open: false }">
+      <button @click="open = true">Expand</button>
+   
+      <span x-show="open">
+          Content...
+      </span>
+  </div>
+
+  <!-- Selection -->
+
+
+</body>
+<script src="../static/scripts/script.js"></script>
+</html>
